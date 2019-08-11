@@ -1,0 +1,213 @@
+body {
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#drop-area {
+  border-radius: 20px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#drop-area.highlight .background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+p {
+  margin-top: 0;
+}
+
+.upload {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.upload i {
+  display: block;
+  text-align: center;
+  font-size: 60px;
+  color: #888;
+  padding: 15px;
+  border-radius: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.progress {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 10px;
+  background-color: #3289a8;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  background: #3289a8;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.button:hover {
+  background: #20596d;
+}
+
+#fileElem {
+  display: none;
+}
+
+.background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(50, 137, 168, 0.8);
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 25px;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 25px;
+  font-size: 25px;
+  color: #333;
+  cursor: pointer;
+}
+
+.menu-btn:hover {
+  background-color: #f8f8f8;
+  border-radius: 100%;
+}
+
+.menu {
+  background-color: #3289a8;
+  position: fixed;
+  top: 0px;
+  right: -500px;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  -webkit-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  overflow: auto;
+}
+
+.menu.active {
+  right: 0px;
+}
+
+.menu h1 {
+  color: #a8d5e5;
+  font-size: 25px;
+  margin: 0px;
+  padding: 25px;
+  padding-bottom: 0px;
+  margin-top: 15px;
+}
+
+.menu h1 i {
+  float: right;
+  cursor: pointer;
+}
+
+.menu h1 i:hover {
+  color: #fff;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 25px;
+  margin: 0;
+  padding-bottom: 0px;
+}
+
+.menu ul li {
+  padding: 10px 0px;
+  color: #a8d5e5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu ul li.new::before {
+  content: "Nowy";
+  margin-right: 10px;
+  background-color: #ffc400;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+}
+
+.menu ul li a {
+  color: #a8d5e5;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  color: #fff;
+}
+
+.menu ul li span {
+  float: right;
+  color: #ddd;
+  font-weight: bold;
+}
+
+.menu ul li:last-child {
+  border: none;
+}
+
+.amount {
+  background-color: #f44242;
+  padding: 3px 6px;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  display: none;
+}
+/*# sourceMappingURL=app.css.map */

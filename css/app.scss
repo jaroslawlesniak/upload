@@ -1,0 +1,198 @@
+$theme-color: #3289a8;
+$theme-light: lighten($theme-color, 35);
+$theme-dark: darken($theme-color, 15);
+
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#drop-area {
+  border-radius: 20px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.highlight {
+    .background {
+      display: flex;
+    }
+  }
+}
+
+p {
+  margin-top: 0;
+}
+.upload{
+  margin-bottom: 10px;
+  text-align: center;
+
+  i {
+    display: block;
+    text-align: center;
+    font-size: 60px;
+    color: #888;
+    padding: 15px;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.progress {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 10px;
+  background-color: $theme-color;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  background: $theme-color;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+}
+.button:hover {
+  background: $theme-dark;
+}
+#fileElem {
+  display: none;
+}
+
+.background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($theme-color, .8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 25px;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 25px;
+  font-size: 25px;
+  color: #333;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f8f8f8;
+    border-radius: 100%;
+  }
+}
+
+.menu {
+  background-color: $theme-color;
+  position: fixed;
+  top: 0px;
+  right: -500px;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  overflow: auto;
+
+  &.active {
+    right: 0px;
+  }
+
+  h1 {
+    color: lighten($theme-color, 35);
+    font-size: 25px;
+    margin: 0px;
+    padding: 25px;
+    padding-bottom: 0px;
+    margin-top: 15px;
+
+    i {
+      float: right;
+      cursor: pointer;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  ul {
+   list-style: none;
+   padding: 25px;
+   margin: 0;
+   padding-bottom: 0px;
+   
+   li {
+      padding: 10px 0px;
+      color: $theme-light;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &.new {
+        &::before {
+          content: "Nowy";
+          margin-right: 10px;
+          background-color: #ffc400;
+          display: inline-block;
+          padding: 5px;
+          color: #fff;
+        }
+      }
+    
+      a {
+        color: $theme-light;
+        text-decoration: none;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+
+      span {
+        float: right;
+        color: #ddd;
+        font-weight: bold;
+      }
+
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
+
+.amount {
+  background-color: #f44242;
+  padding: 3px 6px;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 20px;
+  right: 25px;
+  display: none;
+}
