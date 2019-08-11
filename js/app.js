@@ -68,8 +68,11 @@ function updateProgress(fileNumber, percent) {
     uploadProgress[fileNumber] = percent
     let total = uploadProgress.reduce((tot, curr) => tot + curr, 0) / uploadProgress.length
     progressBar.style.width = total + "%";
+    document.querySelector(".progress-text").innerHTML = "Przesyłanie: " + Math.round(total) + "%";
+    document.querySelector("title").innerHTML = "Przesyłanie: " + Math.round(total) + "%";
+
     if(total === 100) {
-        progressBar.style.width = "0%";
+        document.querySelector("title").innerHTML = "UPLOAD | jaroslawlesniak.pl";
     }
 }
 

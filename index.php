@@ -18,6 +18,7 @@
                     <input type="file" id="fileElem" multiple name="file" onchange="handleFiles(this.files)">
                     <label class="button" for="fileElem">Wybierz pliki</label> albo przeciągnij je na stronę
                 </form>
+                <i class="progress-text"></i>
                 <div class="progress"></div>
                 <div class="background">
                     <div>Upuść pliki, żeby je przesłać</div>

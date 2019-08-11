@@ -71,6 +71,14 @@ p {
   background-color: #3289a8;
 }
 
+.progress-text {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  padding: 10px;
+  color: #333;
+}
+
 .button {
   display: inline-block;
   padding: 10px;
