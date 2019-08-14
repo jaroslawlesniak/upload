@@ -102,7 +102,7 @@ p {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: rgba(50, 137, 168, 0.8);
+  background-color: rgba(32, 89, 109, 0.8);
   display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -112,6 +112,22 @@ p {
           justify-content: center;
   color: #fff;
   font-size: 25px;
+  z-index: 999;
+}
+
+.background div {
+  border: 2px dashed #fff;
+  width: calc(100% - 75px);
+  height: calc(100% - 75px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .menu-btn {
