@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: #fff;
   margin: 0;
@@ -196,12 +197,12 @@ p {
 }
 
 .menu ul li.new::before {
-  content: "Nowy";
+  content: "Przesłano";
   margin-right: 10px;
-  background-color: #ffc400;
+  background-color: #fff;
   display: inline-block;
   padding: 5px;
-  color: #fff;
+  color: #333;
 }
 
 .menu ul li a {
